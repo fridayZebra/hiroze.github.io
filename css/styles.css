@@ -10,28 +10,27 @@ body {
   margin-right: auto;
   padding: 25px;
 }
-.name {width: 50%; order: 1;}
 
-@media (max-width: 600px) {
+@media only print and (max-width: 600px) {
   .container {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
   }
 }
-@media (min-width: 601px) and (max-width: 850) {
+@media only print and (min-width: 601px) and (max-width: 850) {
   .name {width: 50%; order: 1}
   .logo {width: 50%; order: 2}
   .feature {width: 100%; order: 3}
-  .map {width: 33%; order: 4}
-  .resume {width: 33%; order: 5}
-  .feedreader {width: 33%; order: 6}
+  .map {width: 33.3%; order: 4}
+  .resume {width: 33.3%; order: 5}
+  .feedreader {width: 33.3%; order: 6}
 }
-@media only print (min-width: 851px) {
+@media only print and (min-width: 851px) {
   .name {width: 50%; order: 1}
   .logo {width: 50%; order: 2}
   .feature {width: 100%; order: 3}
-  .map {width: 33%; order: 4}
-  .resume {width: 33%; order: 5}
-  .feedreader {width: 33%; order: 6}
+  .map {width: 33.3%; order: 4}
+  .resume {width: 33.3%; order: 5}
+  .feedreader {width: 33.3%; order: 6}
 }
